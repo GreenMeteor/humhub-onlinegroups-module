@@ -5,7 +5,7 @@ namespace humhub\modules\onlinegroups\widgets;
 use Yii;
 use yii\helpers\Url;
 use humhub\models\Setting;
-use humhub\modules\user\models\Group;
+use humhub\modules\user\models\GroupUser;
 use humhub\modules\user\components\Session;
 use yii\web\HttpException;
 
