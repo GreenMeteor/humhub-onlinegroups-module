@@ -1,0 +1,21 @@
+{
+    "id": "onlinegroups",
+    "name": "Online Groups Module",
+    "description": "Adds a panel on the Dashboard and displays the online groups.",
+    "keywords": ["groups", "online", "widget", "dashboard"],
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "GreenMeteor"
+        },
+
+        {
+            "name": "001101"
+        }
+    ],
+    "homepage": "https://github.com/GreenMeteor/humhub-modules-onlinegroups",
+    "license": "AGPL",
+    "humhub": {
+        "minVersion": "1.2"
+    }
+}
