@@ -1,0 +1,1 @@
+# humhub-onlinegroups-module
