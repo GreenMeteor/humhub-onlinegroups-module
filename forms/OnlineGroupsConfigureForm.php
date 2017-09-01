@@ -22,8 +22,8 @@ class OnlineGroupsConfigureForm extends \yii\base\Model
     public function attributeLabels()
     {
         return [
-            'panelTitle' => Yii::t('OnlineGroupsModule.base', 'The panel title for the dashboard widget.'),
-            'maxMembers' => Yii::t('OnlineGroupsModule.base', 'The number of max. Online Groups that will be shown.'),
+            'panelTitle' => Yii::t('base', 'The panel title for the dashboard widget.'),
+            'maxMembers' => Yii::t('base', 'The number of max. Online Groups that will be shown.'),
         ];
     }
 
