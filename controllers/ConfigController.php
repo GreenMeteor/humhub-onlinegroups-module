@@ -36,7 +36,7 @@ class ConfigController extends Controller
             $this->redirect(['/onlinegroups/config/config']);
         }
 
-        return $this->render('config', array('model' => $form));
+        return $this->render('config', ['model' => $form]);
     }
 
 }
