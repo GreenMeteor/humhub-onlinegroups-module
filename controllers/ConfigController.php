@@ -32,7 +32,7 @@ class ConfigController extends Controller
 
 /* ToDo: integrate list from most-active-users at a specific user amount */
 
-            Yii::$app->getSession()->setFlash('data-saved', Yii::t('controllers_SettingController', 'Saved'));
+            Yii::$app->getSession()->setFlash('data-saved', Yii::t('AdminModule.controllers_SettingController', 'Saved'));
             $this->redirect(['/onlinegroups/config/config']);
         }
 
