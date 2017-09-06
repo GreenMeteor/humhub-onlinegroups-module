@@ -6,8 +6,8 @@ return [
     'id' => 'onlinegroups',
     'class' => 'humhub\modules\onlinegroups\Module',
     'namespace' => 'humhub\modules\onlinegroups',
-    'events' => [
+    'events' => array(
         ['class' => Sidebar::className(), 'event' => Sidebar::EVENT_INIT, 'callback' => ['humhub\modules\onlinegroups\Module', 'onSidebarInit']],
-    ],
+    ),
 ];
 ?>

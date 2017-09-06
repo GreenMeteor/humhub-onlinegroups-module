@@ -27,7 +27,7 @@ use humhub\compat\CActiveForm;
         </div>
 
         <hr>
-        <?= Html::submitButton(Yii::t('OnlineGroupsModule.base', 'Save'), ['class' => 'btn btn-primary']); ?>
+        <?= Html::submitButton(Yii::t('base', 'Save'), ['class' => 'btn btn-primary']); ?>
         <a class="btn btn-default"
            href="<?= Url::to(['/admin/module']); ?>"><?= Yii::t('base', 'Back to modules'); ?></a>
 
