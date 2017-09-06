@@ -20,7 +20,7 @@ class Module extends \humhub\components\Module
     public function enable()
     {
         parent::enable();
-        Setting::Set('panelTitle', 'Online Group Members', 'groups');
+        Setting::Set('panelTitle', 'Online Groups', 'groups');
         Setting::Set('maxMembers', 10, 'groups');
     }
 }
