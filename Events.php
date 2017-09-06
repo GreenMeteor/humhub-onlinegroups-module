@@ -5,7 +5,7 @@ namespace humhub\modules\onlinegroups;
 use Yii;
 use yii\helpers\Url;
 use humhub\models\Setting;
-use humhub\modules\onlinegroups\widgets\onlinegroups;
+use humhub\modules\onlinegroups\widgets\OnlineGroupsSidebarWidget;
 use humhub\modules\onlinegroups\Assets;
 
 class Events extends \yii\base\Object
