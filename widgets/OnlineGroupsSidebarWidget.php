@@ -30,7 +30,7 @@ class OnlineGroupsSidebarWidget extends \yii\base\Widget
         return $this->render('onlinegroups', [
                     /**
                     * Find a workaround for this not working...
-                    'OnlineGroups' => $OnlineGroups->all(),
+                    * 'OnlineGroups' => $OnlineGroups->all(),
                     */
                     'title' => Setting::Get('panelTitle', 'onlinegroups')
         ]);
