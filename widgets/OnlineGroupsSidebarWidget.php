@@ -28,9 +28,13 @@ class OnlineGroupsSidebarWidget extends \yii\base\Widget
             $query->andWhere(['>=', 'user.created_at', $fromDate]);
         }
         return $this->render('onlinegroups', [
-                    'OnlineGroups' => $OnlineGroups,
+                    /**
+                    * Find a workaround for this not working...
+                    'OnlineGroups' => $OnlineGroups->all(),
+                    */
                     'title' => Setting::Get('panelTitle', 'onlinegroups')
         ]);
     }
 }
+
 ?>
