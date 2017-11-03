@@ -1,5 +1,6 @@
 <?php
 
+use Yii;
 use humhub\modules\dashboard\widgets\Sidebar;
 
 return [
@@ -10,4 +11,5 @@ return [
         ['class' => Sidebar::className(), 'event' => Sidebar::EVENT_INIT, 'callback' => ['humhub\modules\onlinegroups\Module', 'onSidebarInit']],
     ),
 ];
+
 ?>

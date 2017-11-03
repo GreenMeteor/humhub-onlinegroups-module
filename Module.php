@@ -11,17 +11,19 @@ class Module extends \humhub\components\Module
 {
     public static function onSidebarInit($event)
     {
-        $event->sender->addWidget(OnlineGroupsSidebarWidget::className(), [], ['sortOrder' => 300]);
+        $event->sender->addWidget(OnlineGroupsSidebarWidget::className(), [], ['sortOrder' => 250]);
     }
+
     public function getConfigUrl()
     {
         return Url::to(['/onlinegroups/config/config']);
     }
+
     public function enable()
     {
         parent::enable();
         Setting::Set('panelTitle', 'Online Groups', 'onlinegroups');
-        Setting::Set('maxMembers', 10, 'groups');
+        Setting::Set('maxMembers', 10, 'onlinegroups');
     }
 }
 
