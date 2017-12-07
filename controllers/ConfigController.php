@@ -9,7 +9,6 @@ use humhub\models\Setting;
 
 class ConfigController extends Controller
 {
-
     /**
      * Configuration Action for Super Admins
      */
@@ -26,10 +25,8 @@ class ConfigController extends Controller
             Yii::$app->getSession()->setFlash('data-saved', Yii::t('AdminModule.controllers_SettingController', 'Saved'));
             $this->redirect(['/onlinegroups/config/config']);
         }
-
-        return $this->render('config', ['model' => $form]);
+        return $this->render('config', array('model' => $form));
     }
-
 }
 
 ?>
