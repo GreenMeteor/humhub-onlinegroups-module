@@ -18,25 +18,23 @@ class OnlineGroupsSidebarWidget extends \yii\base\Widget
     public function run()
     {
         $maxMembers = (int) Setting::Get('maxMembers', 'onlinegroups');
-
-        $subQuery = GroupUser::find()->where('group_user.user_id = user.id')->andWhere(['group_user.group_id' => $og]);
+        $subQuery = GroupUser::find()->where('group_user.user_id = user.id')->andWhere(['group_user.group_id' => [1]]);
         $query = Session::getOnlineUsers();
         $query->andWhere('EXISTS', $subQuery);
         $query->limit($maxMembers);
         $query->andWhere(['user.status' => User::STATUS_ENABLED]);
         $query->orderBy(['user.created_at' => SORT_DESC]);
-        if ($fromDate != null && $fromDate != "") {
-            $query->andWhere(['>=', 'user.created_at', $fromDate]);
         $OnlineUsers = $query->all();
 
-        if (count($OnlineUsers) == 0) {
+          if (count($OnlineUsers) == 0) {
             return;
         }
     }
-        return $this->render('onlinegroups', [
-                'OnlineGroups' => $OnlineUsers,
-                'title' => Setting::Get('panelTitle', 'onlinegroups')
+    return $this->render('onlinegroups', [
+                    'OnlineGroups' => $OnlineUsers,
+                    'title' => Setting::Get('panelTitle', 'onlinegroups')
         ]);
     }
 }
+
 ?>
